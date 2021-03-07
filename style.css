@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700;800&family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600&display=swap");
+:root {
+	--border-color: #144fc6;
+	--fill-color: #6ab3f8;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #3494e4;
+	color: white;
+	font-family: "Nunito", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+h1 {
+	margin: 10px 0 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+h3 {
+	font-weight: 400;
+	margin: 8px 0;
+	letter-spacing: 0.5px;
+	font-family: "Rubik", sans-serif;
+}
+.cup {
+	background-color: white;
+	border: 4px solid var(--border-color);
+	color: var(--border-color);
+	border-radius: 5px 5px 40px 40px;
+	height: 330px;
+	width: 150px;
+	margin: 30px 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.cup.cup-small {
+	width: 50px;
+	height: 95px;
+	border-radius: 3px 3px 15px 15px;
+	background-color: rgba(255, 255, 255, 0.9);
+	cursor: pointer;
+	font-size: 14px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 5px;
+	transition: 0.3s ease;
+}
+.cup.cup-small.full {
+	background-color: var(--fill-color);
+	color: white;
+}
+.cups {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 280px;
+}
+.remained {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	flex: 1;
+	transition: 0.3s ease;
+}
+.remained span {
+	font-size: 20px;
+	font-weight: bold;
+}
+.cup.cup-small span {
+	font-size: 15px;
+	font-weight: bold;
+}
+.remained small {
+	font-size: 15px;
+	font-weight: 500;
+}
+.percentage {
+	background-color: var(--fill-color);
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	height: 0;
+	transition: 0.3s ease;
+}
+.text {
+	text-align: center;
+	margin: -10px 0 15px;
+	font-family: "Mulish", sans-serif;
+	letter-spacing: 0.5px;
+	font-weight: 500;
+}
